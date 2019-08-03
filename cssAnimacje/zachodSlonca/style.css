@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkblue;
+    animation: sky 10s linear infinite;
+}
+
+.grass {
+    position: fixed;
+    height: 40vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(95, 77, 77);
+    animation: grass 10s linear infinite;
+}
+
+.sun {
+    position: fixed;
+    height: 10vw;
+    width: 10vw;
+    left: 10%;
+    bottom: 29vh;
+    border-radius: 50%;
+    background-color: rgb(99, 42, 10);
+    animation: sun 10s linear infinite;
+
+}
+
+@keyframes sky {
+    0% {
+        background-color: darkblue;
+    }
+
+    25% {
+        background-color: rgb(23, 23, 204);
+    }
+
+    50% {
+        background-color: skyblue;
+    }
+
+    75% {
+        background-color: rgb(23, 23, 204);
+    }
+
+    100% {
+        background-color: darkblue;
+    }
+}
+
+@keyframes grass {
+    0% {
+        background-color: rgb(5, 19, 5);
+    }
+
+    25% {
+        background-color: rgb(1, 75, 1);
+    }
+
+    50% {
+        background-color: green;
+    }
+
+    75% {
+        background-color: rgb(1, 75, 1);
+    }
+
+    100% {
+        background-color: rgb(5, 19, 5);
+    }
+}
+
+@keyframes sun {
+    0% {
+        left: 10%;
+        bottom: 29vh;
+        background-color: rgb(99, 42, 10);
+    }
+
+    25% {
+        left: 20%;
+        bottom: 40vh;
+        background-color: rgb(126, 108, 11);
+    }
+
+    50% {
+        left: 45%;
+        bottom: 50vh;
+        background-color: yellow;
+    }
+
+    75% {
+        left: 75%;
+        bottom: 40vh;
+        background-color: rgb(126, 108, 11);
+    }
+
+    100% {
+        left: 90%;
+        bottom: 29vh;
+        background-color: rgb(99, 42, 10);
+    }
+}

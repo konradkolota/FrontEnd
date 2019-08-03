@@ -1,0 +1,162 @@
+<!-- 
+    Układ 16:9
+    Ma być podobny (nie pixel w pixel)
+    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
+
+    ZŁOTE ZASADY
+    - Zrób tak jak potrafisz i tyle ile potrafisz
+    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
+    - Nie przeskakuj ćwiczenia. 
+ -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <style>
+        div.picture {
+            position: relative;
+            width: 160vh;
+            height: 90vh;
+            left: calc(50% - 160vh/2);
+            top: calc(50% - 90vh/2);
+            overflow: hidden;
+            background-color: #BFB3A7;
+        }
+
+        div.picture img {
+            position: absolute;
+        }
+
+        /*wulkan*/
+
+        div.picture img:nth-child(1) {
+            z-index: 4;
+            width: 100%;
+            top: 3%;
+            left: 0;
+        }
+
+        /*warstwa przed wulkanem*/
+
+        div.picture img:nth-child(2) {
+            z-index: 5;
+            width: 100%;
+            top: 17%;
+            left: 0;
+        }
+
+        /*warstwa biała*/
+
+        div.picture img:nth-child(3) {
+            z-index: 6;
+            width: 100%;
+            top: 28%;
+            left: 0;
+        }
+
+        /*trzecia warstwa kremowa*/
+
+        div.picture img:nth-child(4) {
+            z-index: 7;
+            width: 100%;
+            top: 26%;
+            left: 0;
+        }
+
+        /*druga warstwa troszke ciemniejsza*/
+
+        div.picture img:nth-child(5) {
+            z-index: 8;
+            width: 100%;
+            top: 40%;
+            left: 0;
+        }
+
+        /*pierwsza warstwa najciemniejsza*/
+
+        div.picture img:nth-child(6) {
+            z-index: 10;
+            width: 100%;
+            top: 65%;
+            left: 0;
+        }
+
+        /*sloneczko*/
+
+        div.picture img:nth-child(7) {
+            left: 5%;
+            right: 0;
+            width: 10%;
+        }
+
+        /*chmurka lewa*/
+
+        div.picture img:nth-child(8) {
+            width: 30%;
+            top: 5%;
+            left: 0;
+        }
+
+        /*chmurka prawa*/
+
+        div.picture img:nth-child(9) {
+            right: -1%;
+            top: 2%;
+            width: 50%;
+        }
+
+        /*galaz z ptakiem*/
+
+        div.picture img:nth-child(10) {
+            z-index: 9;
+            width: 35%;
+            top: 19%;
+            right: 0;
+        }
+
+        /*japonskie znaczki*/
+
+        div.picture img:nth-child(11) {
+            bottom: 15%;
+            left: 5%;
+            width: 7%;
+            z-index: 11;
+        }
+
+        p {
+            position: absolute;
+            z-index: 999;
+            bottom: 1%;
+            right: 2%;
+            font-family: 'Dancing Script', cursive;
+            font-size: 3vh;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+        <!-- img[src=img/japan$.png]*11 -->
+        <img src="img/japan1.png" alt="">
+        <img src="img/japan2.png" alt="">
+        <img src="img/japan3.png" alt="">
+        <img src="img/japan4.png" alt="">
+        <img src="img/japan5.png" alt="">
+        <img src="img/japan6.png" alt="">
+        <img src="img/japan7.png" alt="">
+        <img src="img/japan8.png" alt="">
+        <img src="img/japan9.png" alt="">
+        <img src="img/japan10.png" alt="">
+        <img src="img/japan11.png" alt="">
+        <p>Wykonał: Kołota Konrad</p>
+
+    </div>
+</body>
+
+</html>

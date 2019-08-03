@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+p {
+    position: fixed;
+    height: 50px;
+    width: 100px;
+    left: calc(50vw - 150px);
+    opacity: 0;
+    line-height: 100vh;
+    font-family: arial, sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+    transition: 1s;
+}
+
+div.circle {
+    position: fixed;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+div.red.circle {
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+}
+
+
+
+div.green.circle {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: green;
+}
+
+div.blue.circle {
+    bottom: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+}
+
+div.orange.circle {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+}
+
+/*----------HOVER----------*/
+
+div.red.circle:hover~.bg {
+    background-color: red;
+}
+
+div.red.circle:hover~.bg p.red {
+    display: inline;
+    opacity: 1;
+}
+
+
+div.green.circle:hover~.bg {
+    background-color: green;
+}
+
+div.green.circle:hover~.bg p.green {
+    display: inline;
+    opacity: 1;
+}
+
+
+div.blue.circle:hover~.bg {
+    background-color: blue;
+}
+
+div.blue.circle:hover~.bg p.blue {
+    display: inline;
+    opacity: 1;
+}
+
+div.orange.circle:hover~.bg {
+    background-color: orange;
+}
+
+div.orange.circle:hover~.bg p.orange {
+    display: inline;
+    opacity: 1;
+}
